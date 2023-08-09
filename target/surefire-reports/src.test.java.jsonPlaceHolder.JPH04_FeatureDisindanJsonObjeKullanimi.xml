@@ -1,0 +1,17 @@
+<testsuite failures="0" name="src/test/java/jsonPlaceHolder/JPH04_FeatureDisindanJsonObjeKullanimi.feature" skipped="0" tests="1" time="0.978437">
+  <testcase classname="src.test.java.jsonPlaceHolder.JPH04_FeatureDisindanJsonObjeKullanimi" name="TC04 disardan Json Obje Kullanilabilmeli" time="0.978437">
+    <system-out>* def baseUrl = 'https://jsonplaceholder.typicode.com' .................... passed
+* def pathParams = '/posts/70' ............................................ passed
+* def requestBody = read ("request.json") ................................. passed
+* def expectedResponseBody = read ("expectedResponseBody.json") ........... passed
+Given url  baseUrl ........................................................ passed
+And path  pathParams ...................................................... passed
+When request  requestBody ................................................. passed
+And method Put ............................................................ passed
+Then status 200 ........................................................... passed
+And assert response.id == expectedResponseBody.id ......................... passed
+And assert response.title == expectedResponseBody.title ................... passed
+And assert response.body == expectedResponseBody.body ..................... passed
+And assert response.userId == expectedResponseBody.userId ................. passed</system-out>
+  </testcase>
+</testsuite>

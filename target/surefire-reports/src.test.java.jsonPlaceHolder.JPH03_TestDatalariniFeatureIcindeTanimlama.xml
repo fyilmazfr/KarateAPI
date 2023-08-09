@@ -1,0 +1,19 @@
+<testsuite failures="0" name="src/test/java/jsonPlaceHolder/JPH03_TestDatalariniFeatureIcindeTanimlama.feature" skipped="0" tests="1" time="0.894411">
+  <testcase classname="src.test.java.jsonPlaceHolder.JPH03_TestDatalariniFeatureIcindeTanimlama" name="TC03 Background Kullanilabilmeli" time="0.894411">
+    <system-out>* def baseUrl = 'https://jsonplaceholder.typicode.com' .................... passed
+* def pathParams = '/posts/70' ............................................ passed
+* def requestBody = ....................................................... passed
+* def expectedResponseBody = .............................................. passed
+Given url  baseUrl ........................................................ passed
+And path  pathParams ...................................................... passed
+When request  requestBody ................................................. passed
+And method Put ............................................................ passed
+Then status 200 ........................................................... passed
+And assert responseHeaders['Content-Type'][0] == 'application/json; charset=utf-8' . passed
+And assert responseHeaders['Connection'][0] == 'keep-alive' ............... passed
+And assert response.id == expectedResponseBody.id ......................... passed
+And assert response.title == expectedResponseBody.title ................... passed
+And assert response.body == expectedResponseBody.body ..................... passed
+And assert response.userId == expectedResponseBody.userId ................. passed</system-out>
+  </testcase>
+</testsuite>

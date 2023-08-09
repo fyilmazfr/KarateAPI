@@ -1,0 +1,16 @@
+<testsuite failures="0" name="src/test/java/jsonPlaceHolder/JPH02_Put_ResponseAssertions.feature" skipped="0" tests="1" time="1.146875">
+  <testcase classname="src.test.java.jsonPlaceHolder.JPH02_Put_ResponseAssertions" name="TC02 Put request sonucu donen response expected degerlere uygun olmali" time="1.146875">
+    <system-out>Given url 'https://jsonplaceholder.typicode.com' .......................... passed
+And path "/posts/70" ...................................................... passed
+And request ............................................................... passed
+When method PUT ........................................................... passed
+Then status 200 ........................................................... passed
+And print response ........................................................ passed
+And assert responseHeaders['Content-Type'][0] == 'application/json; charset=utf-8' . passed
+And assert responseHeaders['Connection'][0] == 'keep-alive' ............... passed
+And assert response.title == 'Ahmet' ...................................... passed
+And assert response.body == 'Merhaba' ..................................... passed
+And assert response.id == '70' ............................................ passed
+And assert response.userId == '10' ........................................ passed</system-out>
+  </testcase>
+</testsuite>

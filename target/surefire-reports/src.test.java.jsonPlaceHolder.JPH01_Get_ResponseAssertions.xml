@@ -1,0 +1,13 @@
+<testsuite failures="0" name="src/test/java/jsonPlaceHolder/JPH01_Get_ResponseAssertions.feature" skipped="0" tests="1" time="1.084571">
+  <testcase classname="src.test.java.jsonPlaceHolder.JPH01_Get_ResponseAssertions" name="1" time="1.084571">
+    <system-out>Given url 'https://jsonplaceholder.typicode.com' .......................... passed
+And path "/posts/44" ...................................................... passed
+When method GET ........................................................... passed
+Then status 200 ........................................................... passed
+And match responseStatus == 200 ........................................... passed
+And assert responseTime &lt; 1000 ............................................ passed
+And assert responseHeaders['Content-Type'][0] == 'application/json; charset=utf-8' . passed
+And assert response.userId == 5 ........................................... passed
+And assert response.id == 44 .............................................. passed</system-out>
+  </testcase>
+</testsuite>
